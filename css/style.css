@@ -1,0 +1,46 @@
+body{
+    padding: 0 30px;
+}
+#src_btn, .screenshot{
+    left: 50%;
+    position: fixed;
+    transform: translate(-50%, -50%);
+}
+#src_btn{
+    background-color: #4a98f7;
+    border: none;
+    border-radius: 30px;
+    bottom: 15px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    outline: none;
+    padding: 15px 25px;
+}
+.src_preview{
+    background-color: rgba(0,0,0,0.65);
+    display: none;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.src_preview.show{
+    display: block;
+}
+.src_preview .screenshot{
+    aspect-ratio: 16 / 9;
+    top: 50%;
+    width: 70%;
+}
+.screenshot img{
+    width: 100%;
+}
+#close_btn{
+    cursor: pointer;
+    color: #fff;
+    font-size: 19px;
+    position: absolute;
+    right: -25px;
+}
